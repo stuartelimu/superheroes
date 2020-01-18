@@ -1,3 +1,9 @@
-from django.shortcuts import render
+from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView
 
-# Create your views here.
+from .models import Hero
+from .serializers import HeroSerializer
+
+
+class HeroView(ListCreateAPIView):
+    queryset = Hero.objects.all()
+    serializer_class = HeroSerializer
