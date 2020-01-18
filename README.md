@@ -1,2 +1,2 @@
-# superheroes
+# SuperHeroes
 The SuperHeroes API
